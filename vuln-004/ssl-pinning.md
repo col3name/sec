@@ -2,7 +2,7 @@
 
 **Severity:** medium
 
-**Scope:** MyTonWallet Web App, iOS, Android, Electron Desktop, Browser Extension
+**Scope:** MyTonWallet  iOS, Android, Electron Desktop
 
 ---
 

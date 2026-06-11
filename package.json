@@ -1,0 +1,10 @@
+{
+  "name": "mytonwallet-vuln-poc",
+  "version": "1.0.0",
+  "description": "VULN-001 PoC — MyTonWallet Cross-Origin Origin Spoofing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

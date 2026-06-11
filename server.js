@@ -786,7 +786,8 @@ const server = http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cross-Origin-Opener-Policy', 'unsafe-none');
   res.setHeader('Cross-Origin-Embedder-Policy', 'unsafe-none');
-
+  res.end(PARENT_PAGE);
+  return
   const url = new URL(req.url, 'http://localhost');
   const pathname = url.pathname;
   const page = ROUTES[pathname];

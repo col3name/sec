@@ -3,7 +3,7 @@
 ## Links
 
 - [Full Vulnerability Report](https://docs.google.com/document/d/1HxAp2w4_Z2SzTPa_tBXC4tB9EPv_4S5sld7QKOsS20U/edit?usp=sharing)
-- [Vercel Demo](https://sec-henna.vercel.app/)
+- [Demo](https://sec-henna.vercel.app/)
 - [Local exploit server](../check/server.js)
 
 ## Quick Start

@@ -1,7 +1,7 @@
 # SSL/TLS Certificate Pinning — Missing
 
-**Severity:** Major
-**Bounty:** Up to $4,000 USD (USDT)
+**Severity:** medium
+
 **Scope:** MyTonWallet Web App, iOS, Android, Electron Desktop, Browser Extension
 
 ---

@@ -1,6 +1,6 @@
 # SSL Pinning — Missing (Short)
 
-**Severity:** Major | **Bounty:** Up to $4,000 USDT
+**Severity:** Medium
 **Scope:** All platforms (Web, iOS, Android, Electron, Extension)
 
 ---

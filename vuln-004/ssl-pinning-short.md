@@ -1,7 +1,7 @@
 # SSL Pinning — Missing (Short)
 
 **Severity:** Medium
-**Scope:** All platforms (Web, iOS, Android, Electron, Extension)
+**Scope:** All platforms (iOS, Android, Electron)
 
 ---
 

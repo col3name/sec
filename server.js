@@ -131,6 +131,7 @@ const TRUSTED_PAGE = `<!DOCTYPE html>
     </div>
   </div>
 
+  <!--
   <div class="card">
     <h3>Send Transaction</h3>
     <div class="row">
@@ -158,6 +159,7 @@ const TRUSTED_PAGE = `<!DOCTYPE html>
     <button class="btn btn-outline btn-sm mt-2" id="signBtn" disabled>\u270D\uFE0F Sign Data</button>
     <div id="signResult" style="margin-top:8px;font-size:13px;word-break:break-all"></div>
   </div>
+  -->
 
   <div class="card">
     <h3>Events Log</h3>
@@ -209,8 +211,7 @@ const TRUSTED_PAGE = `<!DOCTYPE html>
       document.getElementById('connectBtn').textContent = '\u2705 Connected';
       document.getElementById('connectBtn').disabled = true;
       document.getElementById('disconnectBtn').style.display = '';
-      document.getElementById('sendBtn').disabled = false;
-      document.getElementById('signBtn').disabled = false;
+      // sendBtn/signBtn commented out — UI removed
 
       const network = account.chain;
       if (network) {
@@ -233,8 +234,7 @@ const TRUSTED_PAGE = `<!DOCTYPE html>
       document.getElementById('connectBtn').textContent = '\u{1F517} Connect Wallet';
       document.getElementById('connectBtn').disabled = false;
       document.getElementById('disconnectBtn').style.display = 'none';
-      document.getElementById('sendBtn').disabled = true;
-      document.getElementById('signBtn').disabled = true;
+      // sendBtn/signBtn commented out — UI removed
       setStatus('\uD83D\uDD0C Disconnected', 'warn');
       log('\uD83D\uDD0C Disconnected');
     }
@@ -274,6 +274,7 @@ const TRUSTED_PAGE = `<!DOCTYPE html>
       }
     }
 
+    /* ─── Send Transaction / Sign Data (commented out for demo) ───
     async function sendTransaction() {
       const to = document.getElementById('txTo').value.trim();
       const amount = document.getElementById('txAmount').value.trim();
@@ -312,6 +313,7 @@ const TRUSTED_PAGE = `<!DOCTYPE html>
       if (!connector || !connector.connected) {
         document.getElementById('signResult').textContent = '\u274C Not connected';
         return;
+
       }
 
       try {
@@ -332,6 +334,7 @@ const TRUSTED_PAGE = `<!DOCTYPE html>
         log('\u274C Sign error: ' + (e.message || e));
       }
     }
+    */
 
     function disconnectWallet() {
       if (connector && connector.connected) {
@@ -342,8 +345,7 @@ const TRUSTED_PAGE = `<!DOCTYPE html>
 
     document.getElementById('connectBtn').addEventListener('click', connectWallet);
     document.getElementById('disconnectBtn').addEventListener('click', disconnectWallet);
-    document.getElementById('sendBtn').addEventListener('click', sendTransaction);
-    document.getElementById('signBtn').addEventListener('click', signData);
+    // sendBtn/signBtn event listeners removed
     tryRestore();
   </script>
 </body>

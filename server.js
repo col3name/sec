@@ -798,8 +798,9 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': contentType });
     res.end(page);
   } else {
-    res.writeHead(404, { 'Content-Type': 'text/plain' });
-    res.end('Not Found: ' + pathname);
+    // Fallback: любой неизвестный путь возвращает parent page
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(PARENT_PAGE);
   }
 });
 

@@ -776,7 +776,7 @@ const PARENT_PAGE = `<!DOCTYPE html>
 
 const ROUTES = {
   '/': PARENT_PAGE,
-  '/parent.html': PARENT_PAGE,
+  '/parent': PARENT_PAGE,
   '/trusted': TRUSTED_PAGE,
   '/exploit': EXPLOIT_PAGE,
   '/tonconnect-manifest.json': MANIFEST,
